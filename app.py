@@ -19,4 +19,6 @@ with gr.Blocks() as app:
 
     generate_btn.click(fn=full_pipeline, inputs=[disease_input, age_input], outputs=[output_text, output_pdf])
 
-app.launch()
+app.launch(share=True)
+
+
